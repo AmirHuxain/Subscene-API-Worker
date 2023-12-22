@@ -47,22 +47,22 @@ subtitles.get("/:path", async (c) => {
     const parts = imdb.split("/");
     const imdbId = parts[parts.length - 1];
 
-    let imdbData = await apiRequestJson(
-      `https://imdb.bymirrorx.eu.org/title/${imdbId}`
-    );
+    // let imdbData = await apiRequestJson(
+    //   `https://imdb.bymirrorx.eu.org/title/${imdbId}`
+    // );
 
     let imdbInfo = {
-      imdb: imdb,
-      description: imdbData.plot,
-      poster: imdbData.image,
-      type: imdbData.contentType,
-      rating: imdbData.rating,
-      contentRating: imdbData.contentRating,
-      runtime: imdbData.runtime,
-      released: imdbData.releaseDetailed,
-      genres: imdbData.genre,
-      top_credits: imdbData.top_credits,
-      images: imdbData.images,
+      // imdb: imdb,
+      // description: imdbData.plot,
+      // poster: imdbData.image,
+      // type: imdbData.contentType,
+      // rating: imdbData.rating,
+      // contentRating: imdbData.contentRating,
+      // runtime: imdbData.runtime,
+      // released: imdbData.releaseDetailed,
+      // genres: imdbData.genre,
+      // top_credits: imdbData.top_credits,
+      // images: imdbData.images,
     };
 
     // if (imdb) {
